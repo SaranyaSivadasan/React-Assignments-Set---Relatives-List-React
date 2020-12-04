@@ -4,7 +4,11 @@ import "../styles/App.css";
 class App extends Component {
   render() {
     const relatives = ["Saranya", "Siva", "Das"];
-    return <div id="main">{/* Do not remove the main div */}</div>;
+    return (
+      <div id="main">
+        <ol></ol>
+      </div>
+    );
   }
 }
 
