@@ -6,7 +6,11 @@ class App extends Component {
     const relatives = ["Saranya", "Siva", "Das"];
     return (
       <div id="main">
-        <ol></ol>
+        <ol key="relativeList">
+          {relatives.map((relative, index) => (
+            <li key={"relativeListItem" + (index + 1)}>{relative}</li>
+          ))}
+        </ol>
       </div>
     );
   }
